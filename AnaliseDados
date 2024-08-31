@@ -1,0 +1,72 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Carregar o conjunto de dados
+df = pd.read_csv('vendas_doces_ficticio.csv')
+
+# Converter a coluna 'Data' para o tipo datetime
+df['Data'] = pd.to_datetime(df['Data'])
+
+# Verificar os dados
+print("Primeiras linhas do conjunto de dados:")
+print(df.head())
+
+# Estatísticas básicas
+print("\nEstatísticas Descritivas:")
+print(df.describe())
+
+# Verificar valores ausentes
+print("\nValores ausentes por coluna:")
+print(df.isnull().sum())
+
+# Vendas totais por categoria
+vendas_por_categoria = df.groupby('Categoria')['Quantidade Vendida'].sum()
+print("\nVendas Totais por Categoria:")
+print(vendas_por_categoria)
+
+# Vendas totais por produto
+vendas_por_produto = df.groupby('Produto')['Quantidade Vendida'].sum()
+print("\nVendas Totais por Produto:")
+print(vendas_por_produto)
+
+# Vendas diárias
+vendas_diarias = df.groupby(df['Data'].dt.date)['Quantidade Vendida'].sum()
+print("\nVendas Diárias:")
+print(vendas_diarias)
+
+# Gráfico de Vendas Totais por Categoria
+plt.figure(figsize=(10, 6))
+vendas_por_categoria.plot(kind='bar', color='skyblue')
+plt.title('Vendas Totais por Categoria')
+plt.xlabel('Categoria')
+plt.ylabel('Quantidade Vendida')
+plt.xticks(rotation=45)
+plt.grid(axis='y')
+plt.tight_layout()
+plt.savefig('vendas_por_categoria.png')  # Salvar o gráfico como imagem
+plt.show()
+
+# Gráfico de Vendas Diárias
+plt.figure(figsize=(12, 6))
+plt.plot(vendas_diarias.index, vendas_diarias.values, marker='o', color='orange')
+plt.title('Vendas Diárias')
+plt.xlabel('Data')
+plt.ylabel('Quantidade Vendida')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.savefig('vendas_diarias.png')  # Salvar o gráfico como imagem
+plt.show()
+
+# Gráfico de Vendas por Produto
+plt.figure(figsize=(12, 6))
+sns.barplot(x=vendas_por_produto.index, y=vendas_por_produto.values, palette='viridis')
+plt.title('Vendas Totais por Produto')
+plt.xlabel('Produto')
+plt.ylabel('Quantidade Vendida')
+plt.xticks(rotation=45)
+plt.grid(axis='y')
+plt.tight_layout()
+plt.savefig('vendas_por_produto.png')  # Salvar o gráfico como imagem
+plt.show()
