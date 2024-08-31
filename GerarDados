@@ -1,0 +1,45 @@
+1. Contextualização
+A experiência de extensão na loja Doce Sabor envolveu a aplicação prática de técnicas de análise de dados utilizando a linguagem Python e suas bibliotecas para melhorar a gestão de vendas da loja. A atividade começou com a coleta e análise dos dados fictícios de vendas, seguidos pela criação de visualizações para identificar padrões e tendências. Essa prática permitiu uma aplicação concreta dos conteúdos estudados em teoria, como técnicas de manipulação e visualização de dados com pandas, matplotlib, e seaborn.
+
+A interação com a proprietária, Jorgeane, e sua equipe foi crucial para adaptar as análises às necessidades reais da loja. Esta troca ajudou a identificar áreas de melhoria, como o ajuste de estoque e estratégias de marketing baseadas em dados. O trabalho demonstrou a importância da análise de dados na tomada de decisões e reforçou a relevância da teoria estudada, mostrando como ferramentas tecnológicas podem ser aplicadas para resolver problemas práticos.
+
+2. Metodologia
+Para realizar a atividade de extensão, foram utilizados os seguintes métodos:
+
+a. Coleta de Dados
+
+Método: Geração de um arquivo CSV com dados fictícios de vendas, incluindo colunas como Data, Produto, Categoria, Quantidade Vendida e Preço.
+Ferramentas: Python com bibliotecas pandas para criação e manipulação dos dados.
+Detalhes: Os dados foram criados com base em padrões realistas de vendas e armazenados em um arquivo CSV para fácil leitura e processamento.
+b. Análise de Dados
+
+Método: Processamento e análise dos dados usando pandas para limpeza e análise estatística. Criação de gráficos com matplotlib e seaborn para visualizar vendas por categoria, produto e período.
+Detalhes: Foi realizada uma análise exploratória para identificar padrões de vendas e sazonalidades. As análises incluíram estatísticas descritivas e gráficos de linha e barras.
+c. Treinamento e Apresentação
+
+Método: Sessão de treinamento para a equipe da loja sobre como interpretar os gráficos e utilizar as análises para tomar decisões.
+Detalhes: Foram apresentados gráficos e relatórios, com explicações detalhadas sobre como eles podem ser usados para melhorar as operações da loja. Foram fornecidos exemplos práticos e exercícios.
+d. Avaliação
+
+Método: Aplicação de questionários de satisfação e realização de reuniões de avaliação para coletar feedback sobre a utilidade das análises e do treinamento.
+Detalhes: Questionários foram elaborados para avaliar a clareza das visualizações e a eficácia do treinamento. Reuniões foram realizadas para discutir o impacto das análises e receber sugestões para melhorias.
+3. Resultados e Discussão
+Resultados Obtidos:
+
+Eficácia das Visualizações de Dados
+
+Impacto: As visualizações criadas ajudaram a identificar tendências e padrões de vendas, permitindo ajustes no estoque e estratégias de marketing. Houve um aumento nas vendas em produtos promovidos com base nas análises.
+Comparação: A análise comparativa dos dados antes e depois da implementação mostrou uma melhora na eficiência das vendas e na gestão de estoque.
+Satisfação da Equipe
+
+Impacto: Os questionários de satisfação indicaram que a equipe achou as análises e o treinamento úteis. A clareza dos gráficos e a aplicabilidade prática foram elogiadas.
+Feedback: A equipe relatou maior confiança em utilizar os dados para tomada de decisões e uma melhor compreensão das necessidades dos clientes.
+Facilidades e Dificuldades
+
+Facilidades: A colaboração direta com a proprietária e sua equipe facilitou a adaptação das análises às necessidades da loja. O uso de ferramentas Python foi eficiente para manipulação e visualização de dados.
+Dificuldades: A principal dificuldade foi garantir que todos os membros da equipe compreendessem e utilizassem as ferramentas de análise corretamente. Algumas questões técnicas também surgiram durante a implementação dos gráficos.
+Descobertas e Aprendizagens:
+
+Importância da Análise de Dados: A experiência destacou a importância da análise de dados na gestão de pequenas empresas e como ela pode transformar decisões estratégicas.
+Valor do Treinamento: O treinamento prático é fundamental para garantir que os dados sejam utilizados de maneira eficaz e para capacitar a equipe na interpretação dos resultados.
+Feedback Contínuo: A interação constante com a comunidade e a coleta de feedback são essenciais para ajustar as ferramentas e métodos às necessidades reais.
